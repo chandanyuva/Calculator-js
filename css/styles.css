@@ -6,3 +6,38 @@
     border: 1px solid rgba(255, 0, 0, 0.384);
 }
 
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorDiv{
+    width: 400px;
+    height: 600px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.calculatorDiv > div{
+    align-self: stretch;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+div.calDisplay{
+    align-self: flex-end;
+    flex: 2;
+}
+
+span.display{
+    align-self: flex-end;
+    padding: 20px;
+}
