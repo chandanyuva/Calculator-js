@@ -40,12 +40,23 @@
     border-radius: 5px;
     font-weight: 400;
     font-size: 28px;
+    background-color: rgb(255, 255, 255);
+}
+#delete{
+    background-color: rgb(252, 58, 58);
+}
+#delete:hover{
+    background-color: rgb(245, 95, 95);
+}
+#delete:active{
+    background-color: rgb(189, 41, 41);
 }
 .calculatorDiv > button:hover{
     background-color: aliceblue;
 }
 .calculatorDiv > button:active{
-    background-color: rgb(123, 165, 186);
+    background-color: rgb(166, 213, 236);
+    transform: scale(0.95);
 }
 
 #clear{
