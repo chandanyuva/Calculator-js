@@ -1,43 +1,72 @@
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-    border: 1px solid rgba(255, 0, 0, 0.384);
 }
 
 .mainDiv{
-    width: 100vw;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2vh;
+    gap: 20px;
 }
 
 .calculatorDiv{
     width: 400px;
     height: 600px;
-    padding: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding:20px;
+    display: grid;
+    grid-template:repeat(7,1fr)/repeat(4,1fr);
+    gap: 10px;
+    background-color: rgb(146, 249, 249);
 }
 
-.calculatorDiv > div{
-    align-self: stretch;
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
+#display{
+    grid-area: span 2/span 4;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: right;
 }
 
-div.calDisplay{
-    align-self: flex-end;
-    flex: 2;
+.calculatorDiv > button{
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 28px;
+}
+.calculatorDiv > button:hover{
+    background-color: aliceblue;
+}
+.calculatorDiv > button:active{
+    background-color: rgb(123, 165, 186);
 }
 
-span.display{
-    align-self: flex-end;
-    padding: 20px;
+#clear{
+    grid-column: span 2;
+}
+#delete{
+    grid-column: span 2;
+}
+
+.footer{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}
+.footer > p >a{
+    color: black;
+}
+.footer > p >a:hover{
+    color: black;
+    padding: 2px;
+    border: 1px solid #333;
+    border-radius: 5px;
 }
