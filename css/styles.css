@@ -33,7 +33,25 @@
     border: 2px solid #333;
     border-radius: 5px;
     background-color: aliceblue;
-    text-align: right;
+    text-align: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#display-old{
+    /* background-color: #ffffff; */
+    grid-area: span 1;
+    font-size: 36px;
+    color: #818181;
+    align-self: flex-end;
+    padding: 10px;
+}
+#display-curent{
+    /* background-color: #5a5a5a; */
+    grid-area: span 2;
+    font-size: 48px;
+    color: black;
+    align-self: flex-end;
+    padding: 10px;
 }
 
 .calculatorDiv > button{
