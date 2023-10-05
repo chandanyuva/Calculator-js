@@ -1,12 +1,11 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
 }
 
-.mainDiv{
+.mainDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,20 +14,20 @@
     gap: 20px;
 }
 
-.calculatorDiv{
+.calculatorDiv {
     width: 400px;
     height: 600px;
     border: 2px solid #333;
     border-radius: 15px;
-    padding:20px;
+    padding: 20px;
     display: grid;
-    grid-template:repeat(7,1fr)/repeat(4,1fr);
+    grid-template: repeat(7, 1fr) / repeat(4, 1fr);
     gap: 10px;
     background-color: rgb(146, 249, 249);
 }
 
-#display{
-    grid-area: span 2/span 4;
+#display {
+    grid-area: span 2 / span 4;
     padding: 10px 20px;
     border: 2px solid #333;
     border-radius: 5px;
@@ -36,64 +35,66 @@
     text-align: end;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    word-wrap: break-word;
+    word-break: break-all;
 }
-#display-old{
+#display-old {
     /* background-color: #ffffff; */
     grid-area: span 1;
-    font-size: 36px;
+    font-size: 1.5rem;
     color: #818181;
     align-self: flex-end;
     padding: 10px;
 }
-#display-curent{
+#display-curent {
     /* background-color: #5a5a5a; */
     grid-area: span 2;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: black;
     align-self: flex-end;
     padding: 10px;
 }
 
-.calculatorDiv > button{
+.calculatorDiv > button {
     border-radius: 5px;
     font-weight: 400;
     font-size: 28px;
     background-color: rgb(255, 255, 255);
 }
-#delete{
+#delete {
     background-color: rgb(252, 58, 58);
 }
-#delete:hover{
+#delete:hover {
     background-color: rgb(245, 95, 95);
 }
-#delete:active{
+#delete:active {
     background-color: rgb(189, 41, 41);
 }
-.calculatorDiv > button:hover{
+.calculatorDiv > button:hover {
     background-color: aliceblue;
 }
-.calculatorDiv > button:active{
+.calculatorDiv > button:active {
     background-color: rgb(166, 213, 236);
     transform: scale(0.95);
 }
 
-#clear{
+#clear {
     grid-column: span 2;
 }
-#delete{
+#delete {
     grid-column: span 2;
 }
 
-.footer{
+.footer {
     text-decoration: none;
     color: black;
     text-align: center;
     font-weight: 400;
 }
-.footer > p >a{
+.footer > p > a {
     color: black;
 }
-.footer > p >a:hover{
+.footer > p > a:hover {
     color: black;
     padding: 2px;
     border: 1px solid #333;
